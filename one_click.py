@@ -340,7 +340,7 @@ def update_requirements(initial_installation=False, pull=True):
     # Create .git directory if missing
     if not os.path.exists(os.path.join(script_dir, ".git")):
         run_cmd(
-            "git init -b main && git remote add origin https://github.com/oobabooga/text-generation-webui && "
+            "git init -b main && git remote add origin https://github.com/TheMrGong/text-generation-webui && "
             "git fetch && git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main && "
             "git reset --hard origin/main && git branch --set-upstream-to=origin/main",
             environment=True,
